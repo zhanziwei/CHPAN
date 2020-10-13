@@ -58,8 +58,8 @@ In our train.py,we give you some options,as follows:
 ```
 parser = argparse.ArgumentParser(description='Training')
 parser.add_argument('--gpu_ids',default='1', type=str,help='gpu_ids: e.g. 0  0,1,2  0,2')
-parser.add_argument('--name',default='multiplefeatures', type=str, help='output model name')
-parser.add_argument('--data_dir',default='/Project0551/guoqing/scscnet/Market/pytorch',type=str, help='training dir path')
+parser.add_argument('--name',default='', type=str, help='output model name')
+parser.add_argument('--data_dir',default='',type=str, help='training dir path')
 parser.add_argument('--batchsize', default=64, type=int, help='batchsize')
 parser.add_argument('--erasing_p', default=0, type=float, help='Random Erasing probability, in [0,1]')
 parser.add_argument('--warm_epoch', default=10, type=int, help='the first K epoch that needs warm up')
@@ -85,8 +85,8 @@ python3 train.py --gpu_ids .. --name .. --data_dir ../cuhk03-np/detected/pytorch
 ```
 parser = argparse.ArgumentParser(description='testing')
 parser.add_argument('--gpu_ids',default='1', type=str,help='gpu_ids: e.g. 0  0,1,2  0,2')
-parser.add_argument('--name',default='duke', type=str, help='output model name')
-parser.add_argument('--test_dir',default='/Project0551/guoqing/scscnet/Market/pytorch',type=str, help='training dir path')
+parser.add_argument('--name',default='', type=str, help='output model name')
+parser.add_argument('--test_dir',default='',type=str, help='training dir path')
 parser.add_argument('--train_all', action='store_true', help='use all training data' )
 parser.add_argument('--batchsize', default=64, type=int, help='batchsize')
 parser.add_argument('--featurereid', default=6144, type=int, help='batchsize')
