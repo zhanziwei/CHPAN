@@ -116,6 +116,7 @@ python3 evaluate_rerank.py
 | CUHK_Detected|   |  |  | |
 | CUHK_Labeled |   |   |  | |
 | DukeMTMC-reID| 89.72   | 94.08  |  95.42 | 78.95|
+| Market-1501| 95.59   | ----  |  ---- | 88.12|
 
 ### Visualization
 ```
